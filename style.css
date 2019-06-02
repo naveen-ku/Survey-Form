@@ -1,0 +1,168 @@
+body{
+	margin: 0px;
+	padding: 0px;
+	/*background: url(bg.jpeg) ;
+	background-size: cover;*/
+	background-color: lightgrey;
+	height: 100%;
+	padding-bottom: 50px;
+	background-color: #baced3;
+	animation-name: slideIn;
+	animation-duration: 2s;
+	position: relative;
+	color: black;
+	background-position: center;
+	background-repeat: no-repeat;
+
+}
+
+
+@keyframes faded{
+	 from {opacity:0; background-color: white}
+ 	 to {opacity: 1;background-color: black}
+}
+
+ h1{
+	text-align: center;;
+	text-transform: uppercase;
+	color:#000000;
+	/*animation-name: slideIn;
+	animation-duration: 2s;
+	position: relative;*/
+	
+	
+}
+#description{
+	text-align: center;;
+	text-transform: uppercase;
+	animation-name: slideIn;
+	animation-duration: 2s;
+	position: relative;
+}
+
+
+
+
+.outer-form{
+	width: 70%;
+	margin: auto;
+	background-color:white;
+	padding-bottom: 10px;
+	padding-top: 10px;
+	box-sizing: border-box;
+	/*background: rgba(0,0,0,1);*/
+	/*animation-name: slideIn;
+	animation-duration: 2s;
+	position: relative;*/
+	
+}
+@keyframes slideIn{
+	  0% {left:-100%;}
+ 	 50% {left:10%;}
+ 	 100%{ left:0%;}
+}
+
+.row{
+	display: block;
+	margin: 10px 10px 20px 15px;
+	/*animation-name: slideIn;
+	animation-duration: 1s;
+	position: relative;*/
+}
+
+.left{
+	display: inline-block;
+	width: 50%;
+	text-align: right;
+	vertical-align: top;
+	/*min-width: 250px;*/
+	animation-name: slideIn;
+	animation-duration: 2s;
+	position: relative;
+
+}
+
+.right{
+	display: inline-block;
+	width: 40%;
+	animation-name: slideIn;
+	animation-duration: 2s;
+	position: relative;
+
+}
+
+.checkbox{
+	list-style: none;
+
+
+}
+
+textarea{
+	height: 80px;
+	width: 200px;
+}
+
+/*input[type="radio"]{
+	display: flex;
+	flex-wrap: wrap;
+}*/
+
+#submit{
+	
+	position: relative;
+	left: 45%;
+	font-weight: bold;
+	border-radius: 5px;
+	padding: 5px 15px 5px 15px;
+	color: white;
+	border:1px solid white;
+	background-color:#49c0f0 ;
+	
+}
+
+#submit:hover{
+	background-color: #49c0f0;
+	opacity: .8;
+	color: white;
+
+}
+#name, #email, #number{
+		width: 80%;
+		border:1px #777777 solid;
+		height: 35px;
+		border-radius: 3px;
+	}
+
+span{
+	color: red;
+}
+
+@media only screen and (max-width: 600px ) {
+	.outer-form{
+		width: 80%;
+		margin: auto;
+		background-color:#889999;
+	}
+
+	.left{
+		display: block;
+		width: 90%;
+		text-align: left;
+		vertical-align: top;
+
+	}
+
+	.right{
+		text-align: justify-all;
+		width: 100%;
+	}
+
+	/*#name, #email, #number{
+		width: 90%;
+	}
+*/
+	#submit{
+		position: relative;
+		left: 35%;		
+	}
+}
